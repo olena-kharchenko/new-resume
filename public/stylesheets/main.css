@@ -181,6 +181,7 @@ p {
 
 @media screen and (min-width: 768px) {
   .contacts-skills {
+    width: 35%;
     color: #ffffff;
     /* background-color: #2e8b57; */
   }
@@ -202,10 +203,10 @@ p {
   }
 }
 
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 1100px) {
   .name-container {
     position: absolute;
-    left: 33%;
+    left: 28%;
   }
 }
 .about-me {
@@ -216,6 +217,7 @@ p {
 
 @media screen and (min-width: 768px) {
   .about-me {
+    width: 100%;
     padding-top: 190px;
     padding-left: 50px;
     padding-right: 70px;
@@ -273,6 +275,19 @@ p {
 }
 
 .nav-lang li:hover::after {
+  content: '';
+  position: absolute;
+  width: 50%;
+  height: 3px;
+  left: 0;
+  bottom: 0;
+  transform: translate(50%);
+
+  background-color: #2e8b57;
+  border-radius: 2px;
+}
+
+.current::after {
   content: '';
   position: absolute;
   width: 50%;
